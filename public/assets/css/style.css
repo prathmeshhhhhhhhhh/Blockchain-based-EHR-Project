@@ -1,0 +1,1843 @@
+/* MediHub Custom Styles */
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Ensure proper text contrast */
+.card {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.card-body {
+    color: #212529;
+}
+
+.card-title {
+    color: #212529;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #0056b3 100%);
+    border-radius: 0.5rem;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: box-shadow 0.15s ease-in-out;
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-weight: 600;
+    color: #212529;
+}
+
+/* Dashboard specific card fixes */
+.dashboard-card {
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: all 0.15s ease-in-out;
+    height: 100%;
+}
+
+.dashboard-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.dashboard-card .card-body {
+    background-color: #ffffff;
+    color: #212529;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.dashboard-card .card-title {
+    color: #212529;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-card .card-text {
+    color: #6c757d;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.dashboard-card .btn {
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.dashboard-card .btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.btn {
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.badge {
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+.alert {
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    color: #055160;
+}
+
+/* Custom form styles */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+/* Dashboard specific styles */
+.dashboard-card {
+    transition: transform 0.2s ease-in-out;
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+}
+
+.dashboard-card .card-body {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.dashboard-card .card-title {
+    color: #212529;
+    font-weight: 600;
+}
+
+.dashboard-card .card-text {
+    color: #6c757d;
+}
+
+.dashboard-card .btn {
+    color: #ffffff !important;
+    text-decoration: none;
+    border: none;
+}
+
+.dashboard-card .btn:hover {
+    color: #ffffff !important;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.metric-card {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    border-left: 4px solid var(--primary-color);
+    color: #212529;
+}
+
+/* Fix for text-center cards */
+.text-center .card-body {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.text-center .card-title {
+    color: #212529;
+    font-weight: 600;
+}
+
+.text-center .card-text {
+    color: #6c757d;
+}
+
+/* Dashboard improvements */
+.dashboard-card .bi {
+    margin-bottom: 1rem;
+}
+
+.dashboard-card .btn {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+}
+
+/* Better spacing for dashboard sections */
+.row.g-4 > * {
+    padding: 0.75rem;
+}
+
+/* Card height consistency */
+.card.h-100 {
+    height: 100%;
+}
+
+/* Loading states */
+.spinner-border.text-primary {
+    color: #0d6efd !important;
+}
+
+.spinner-border.text-success {
+    color: #198754 !important;
+}
+
+/* Unified Color Palette */
+:root {
+    --primary-color: #007bff;
+    --primary-dark: #0056b3;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #17a2b8;
+    --dark-bg: #1e1e1e;
+    --light-bg: #f8f9fa;
+    --text-dark: #212529;
+    --text-light: #f1f1f1;
+    --text-muted: #6c757d;
+    --border-color: #dee2e6;
+    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-heavy: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Typography Scale */
+h1 { font-size: 24px; font-weight: 700; color: var(--text-dark); }
+h2 { font-size: 20px; font-weight: 600; color: var(--text-dark); }
+h3 { font-size: 18px; font-weight: 600; color: var(--text-dark); }
+h4 { font-size: 16px; font-weight: 600; color: var(--text-dark); }
+h5 { font-size: 14px; font-weight: 600; color: var(--text-dark); }
+h6 { font-size: 12px; font-weight: 600; color: var(--text-dark); }
+
+/* New Dashboard Styles */
+.profile-avatar .avatar-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: var(--shadow-medium);
+}
+
+.metric-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+    height: 100%;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.metric-card.zero-state {
+    opacity: 0.6;
+    background: #f8f9fa;
+}
+
+.metric-card .card-body {
+    padding: 1.5rem;
+}
+
+.metric-card h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.metric-card.zero-state h4 {
+    color: var(--text-muted);
+}
+
+.action-card {
+    background: var(--dark-bg);
+    border: 1px solid #333;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+    height: 100%;
+}
+
+.action-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-heavy);
+    border-color: var(--primary-color);
+}
+
+.action-card .card-body {
+    padding: 2rem;
+}
+
+.action-card .card-title {
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.action-card .card-text {
+    color: #ccc;
+}
+
+.action-icon {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-medium);
+}
+
+.action-card .btn-lg {
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.action-card .btn-lg:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-medium);
+}
+
+/* Button Hierarchy */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: white;
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+    color: white;
+}
+
+.btn-warning {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+    color: var(--text-dark);
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+    color: white;
+}
+
+.btn-info {
+    background-color: var(--info-color);
+    border-color: var(--info-color);
+    color: white;
+}
+
+/* Card headers - solid colors instead of gradients */
+.card-header.bg-primary {
+    background-color: var(--primary-color) !important;
+    color: white;
+}
+
+.card-header.bg-success {
+    background-color: var(--success-color) !important;
+    color: white;
+}
+
+/* Consistent spacing */
+.row.g-3 > * {
+    padding: 0.75rem;
+}
+
+.row.g-4 > * {
+    padding: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem !important;
+}
+
+/* Empty state improvements */
+.text-center.py-5 {
+    padding: 3rem 1rem !important;
+}
+
+.text-center.py-5 i {
+    opacity: 0.5;
+}
+
+/* List group improvements */
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #f1f3f4;
+    padding: 1rem;
+    background: white;
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
+
+.list-group-item h6 {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+/* Header and navigation improvements */
+.navbar {
+    background-color: var(--primary-dark) !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white !important;
+}
+
+/* User dropdown spacing */
+.dropdown-toggle::after {
+    margin-left: 8px;
+}
+
+/* Equal height cards */
+.card.h-100 {
+    display: flex;
+    flex-direction: column;
+}
+
+.card.h-100 .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Consistent card backgrounds */
+.card {
+    background: white;
+    border: 1px solid var(--border-color);
+}
+
+/* Dark action cards text contrast */
+.action-card .text-muted {
+    color: #aaa !important;
+}
+
+/* Zero state styling */
+.zero-state .text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Button consistency */
+.btn {
+    font-weight: 500;
+    border-radius: 0.375rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Badge improvements */
+.badge {
+    font-weight: 500;
+    padding: 0.5em 0.75em;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .action-card .card-body {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .action-icon {
+        margin-bottom: 1rem;
+        margin-right: 0 !important;
+    }
+    
+    .profile-avatar {
+        margin-bottom: 1rem;
+    }
+    
+    .d-flex.justify-content-between {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    
+    .metric-card .card-body {
+        padding: 1rem;
+    }
+    
+    .action-card .card-body {
+        padding: 1.5rem;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .action-card {
+        border: 2px solid var(--primary-color);
+    }
+    
+    .metric-card {
+        border: 2px solid var(--border-color);
+    }
+}
+
+/* Focus indicators for accessibility */
+.btn:focus,
+.dropdown-toggle:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Loading states */
+.spinner-border.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.spinner-border.text-success {
+    color: var(--success-color) !important;
+}
+
+/* Ensure proper contrast for all text elements */
+h1, h2, h3, h4, h5, h6 {
+    color: #212529 !important;
+}
+
+/* Dashboard welcome heading specific styling - FORCE WHITE TEXT FOR DARK BACKGROUND */
+.dashboard-welcome h2 {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5) !important;
+}
+
+.dashboard-welcome p {
+    color: #e9ecef !important;
+}
+
+/* Ensure dashboard headings are always visible - WHITE FOR DARK BACKGROUND */
+.container-fluid h2 {
+    color: #ffffff !important;
+}
+
+/* Force visibility for dashboard welcome section */
+.dashboard-welcome {
+    background: transparent !important;
+}
+
+.dashboard-welcome * {
+    color: #ffffff !important;
+}
+
+.dashboard-welcome .text-muted {
+    color: #e9ecef !important;
+}
+
+/* Additional fix for dark theme dashboard */
+body.dark-theme .dashboard-welcome h2,
+.dark-theme .dashboard-welcome h2,
+.bg-dark .dashboard-welcome h2 {
+    color: #ffffff !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7) !important;
+}
+
+body.dark-theme .dashboard-welcome p,
+.dark-theme .dashboard-welcome p,
+.bg-dark .dashboard-welcome p {
+    color: #e9ecef !important;
+}
+
+/* NUCLEAR OPTION - Force white text for dashboard welcome on ANY background */
+.dashboard-welcome h2,
+.container-fluid .dashboard-welcome h2,
+.row .dashboard-welcome h2,
+.col-12 .dashboard-welcome h2 {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+    font-weight: 700 !important;
+}
+
+.dashboard-welcome p,
+.container-fluid .dashboard-welcome p,
+.row .dashboard-welcome p,
+.col-12 .dashboard-welcome p {
+    color: #e9ecef !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6) !important;
+}
+
+p {
+    color: #212529;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Fix for Bootstrap text color classes */
+.text-primary {
+    color: #0d6efd !important;
+}
+
+.text-success {
+    color: #198754 !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.text-info {
+    color: #0dcaf0 !important;
+}
+
+.text-secondary {
+    color: #6c757d !important;
+}
+
+/* Ensure buttons have proper contrast */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #ffffff;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+    color: #ffffff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #ffffff;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+}
+
+.btn-info {
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+    color: #212529;
+}
+
+/* Fix for badges */
+.badge {
+    color: #ffffff !important;
+}
+
+.bg-primary {
+    background-color: #0d6efd !important;
+}
+
+.bg-success {
+    background-color: #198754 !important;
+}
+
+.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+/* Status indicators */
+.status-pending {
+    color: var(--warning-color);
+}
+
+.status-approved {
+    color: var(--success-color);
+}
+
+.status-revoked {
+    color: var(--danger-color);
+}
+
+.status-active {
+    color: var(--success-color);
+}
+
+.status-expired {
+    color: var(--secondary-color);
+}
+
+/* File upload styles */
+.file-upload-area {
+    border: 2px dashed #dee2e6;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.file-upload-area:hover {
+    border-color: var(--primary-color);
+}
+
+.file-upload-area.dragover {
+    border-color: var(--primary-color);
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Modal styles */
+.modal-content {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    background-color: var(--light-color);
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 2rem 1rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn-group-vertical .btn {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .btn,
+    .modal,
+    footer {
+        display: none !important;
+    }
+    
+    .container {
+        max-width: none !important;
+    }
+    
+    .card {
+        border: 1px solid #000 !important;
+        box-shadow: none !important;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bs-body-bg: #212529;
+        --bs-body-color: #fff;
+    }
+    
+    .card {
+        background-color: #2d3339;
+        color: #fff;
+    }
+    
+    .table {
+        --bs-table-bg: #2d3339;
+        --bs-table-color: #fff;
+    }
+    
+    .form-control {
+        background-color: #2d3339;
+        border-color: #495057;
+        color: #fff;
+    }
+    
+    .form-control:focus {
+        background-color: #2d3339;
+        border-color: var(--primary-color);
+        color: #fff;
+    }
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Utility classes */
+.text-truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.border-dashed {
+    border-style: dashed !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* 1) Keep a single :root and stick to variables */
+:root {
+    --primary-color: #0d6efd;      /* pick one */
+    --primary-dark: #0056b3;
+    --success-color: #198754;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #0dcaf0;
+    --light-bg: #f8f9fa;
+    --dark-bg: #212529;
+    --text-dark: #212529;
+    --text-muted: #6c757d;
+    --text-light: #f1f1f1;
+    --text-light-muted: #c7ccd1;   /* new */
+    --surface-dark: #2b3035;       /* new, for cards in dark mode */
+    --border-dark: #3a3f44;        /* new */
+  }
+  
+  /* 2) Stop forcing ALL badges to white text */
+  .badge { color: inherit !important; }
+  .badge.bg-primary, .badge.text-bg-primary { color: #fff !important; }
+  .badge.bg-success, .badge.text-bg-success { color: #fff !important; }
+  .badge.bg-danger, .badge.text-bg-danger { color: #fff !important; }
+  .badge.bg-warning, .badge.text-bg-warning { color: var(--text-dark) !important; }
+  .badge.bg-info, .badge.text-bg-info { color: #0a2a33 !important; }
+  /* outline badges keep readable default colors */
+  
+  /* 3) Use variables on buttons so palette changes work everywhere */
+  .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+  }
+  
+  /* 4) Dark-mode readability: no dark text on dark surfaces */
+  @media (prefers-color-scheme: dark) {
+    body { color: var(--text-light); background-color: var(--dark-bg); }
+    .card,
+    .list-group-item,
+    .modal-content { 
+      background-color: var(--surface-dark) !important;
+      color: var(--text-light) !important;
+      border-color: var(--border-dark) !important;
+    }
+  
+    /* Anything you previously forced to dark text needs a light equivalent */
+    .card-title,
+    .card-body,
+    .card-text,
+    .list-group-item h6,
+    .form-label,
+    .navbar .nav-link { color: var(--text-light) !important; }
+  
+    /* Muted text should still be readable on dark */
+    .text-muted,
+    .card .card-text,
+    .zero-state .text-muted { color: var(--text-light-muted) !important; }
+  
+    /* Table contrast */
+    .table {
+      --bs-table-bg: var(--surface-dark);
+      --bs-table-color: var(--text-light);
+      --bs-table-border-color: var(--border-dark);
+    }
+  
+    /* Inputs */
+    .form-control, .form-select {
+      background-color: var(--surface-dark);
+      border-color: var(--border-dark);
+      color: var(--text-light);
+    }
+    .form-check-label { color: var(--text-light) !important; }
+  }
+  
+  /* 5) If you wrap sections with .bg-dark, make inner rows readable */
+  .bg-dark .list-group-item {
+    background-color: var(--surface-dark) !important;
+    color: var(--text-light) !important;
+    border-color: var(--border-dark) !important;
+  }
+  
+  /* Input & placeholder visibility */
+.form-control::placeholder,
+.form-select::placeholder {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  .form-control::placeholder,
+  .form-select::placeholder {
+    color: var(--text-light-muted);
+    opacity: 1;
+  }
+
+  /* Select/Date input icons can look too dark; bump their contrast */
+  .form-select,
+  input[type="date"],
+  input[type="text"] {
+    background-color: var(--surface-dark) !important;
+    color: var(--text-light) !important;
+    border-color: var(--border-dark) !important;
+  }
+
+  /* Dropdown menu in dark contexts */
+  .dropdown-menu {
+    background-color: var(--surface-dark);
+    color: var(--text-light);
+    border-color: var(--border-dark);
+  }
+  .dropdown-item { color: var(--text-light); }
+  .dropdown-item:hover { background-color: #343a40; }
+}
+
+/* Footer styling with proper contrast */
+footer, .site-footer {
+    background: var(--light-bg) !important;
+    color: var(--text-dark) !important;
+}
+
+footer .text-muted, 
+.site-footer .text-muted {
+    color: var(--text-dark) !important;
+}
+
+/* Dark mode footer */
+@media (prefers-color-scheme: dark) {
+    footer, .site-footer {
+        background: var(--dark-bg) !important;
+        color: var(--text-light) !important;
+    }
+    
+    footer .text-muted, 
+    .site-footer .text-muted {
+        color: var(--text-light) !important;
+    }
+}
+
+/* Specific footer classes */
+.bg-light {
+    background-color: var(--light-bg) !important;
+}
+
+.bg-light .text-muted {
+    color: var(--text-dark) !important;
+}
+
+/* Ensure footer text is always visible */
+footer.bg-light .text-muted,
+footer.bg-light p {
+    color: var(--text-dark) !important;
+    opacity: 1 !important;
+}
+
+/* Ensure headings in cards are always visible */
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6 {
+    color: var(--text-dark) !important;
+}
+
+.card-body h1, .card-body h2, .card-body h3, .card-body h4, .card-body h5, .card-body h6 {
+    color: var(--text-dark) !important;
+}
+
+/* Specific styling for deregister page headings */
+.alert h5, .alert h6 {
+    color: var(--text-dark) !important;
+}
+
+/* Ensure all text in deregister page is visible */
+.card .list-group-item {
+    color: var(--text-dark) !important;
+}
+
+.card .form-check-label {
+    color: var(--text-dark) !important;
+}
+
+/* Ensure badges and icons are visible */
+.list-group-item .badge {
+    color: white !important;
+}
+
+.list-group-item i {
+    color: inherit !important;
+}
+
+/* FORCE dark text on ALL elements - highest priority */
+.card-body * {
+    color: var(--text-dark) !important;
+}
+
+.card-body h1, .card-body h2, .card-body h3, .card-body h4, .card-body h5, .card-body h6 {
+    color: var(--text-dark) !important;
+}
+
+.card-body .list-group-item {
+    color: var(--text-dark) !important;
+}
+
+.card-body .list-group-item span {
+    color: var(--text-dark) !important;
+}
+
+.card-body .form-check-label {
+    color: var(--text-dark) !important;
+}
+
+/* Override any Bootstrap or other conflicting styles */
+.card-body p, .card-body div, .card-body span:not(.badge) {
+    color: var(--text-dark) !important;
+}
+
+/* Override .bg-dark rules specifically for card-body */
+.card-body, .card-body * {
+    color: var(--text-dark) !important;
+}
+
+/* Ensure list group items in card-body are dark */
+.card-body .list-group-item {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+    border-color: #dee2e6 !important;
+}
+
+.card-body .list-group-item * {
+    color: var(--text-dark) !important;
+}
+
+/* Override any inherited light text */
+.card-body .text-muted,
+.card-body .text-light {
+    color: var(--text-dark) !important;
+}
+
+/* NUCLEAR OPTION - Force ALL text in card-body to be dark */
+.card-body {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+}
+
+.card-body *:not(.badge):not(.btn):not(.btn *):not(i[class*="text-"]) {
+    color: #212529 !important;
+}
+
+/* But preserve icon colors */
+.card-body i[class*="text-primary"] { color: #007bff !important; }
+.card-body i[class*="text-info"] { color: #17a2b8 !important; }
+.card-body i[class*="text-success"] { color: #28a745 !important; }
+.card-body i[class*="text-warning"] { color: #ffc107 !important; }
+.card-body i[class*="text-secondary"] { color: #6c757d !important; }
+
+/* Ensure alerts in card-body have proper backgrounds */
+.card-body .alert {
+    background-color: inherit !important;
+}
+
+.card-body .alert-danger {
+    background-color: #f8d7da !important;
+    color: #721c24 !important;
+}
+
+.card-body .alert-info {
+    background-color: #d1ecf1 !important;
+    color: #0c5460 !important;
+}
+
+/* Profile page specific styling */
+.card-body .form-label {
+    color: var(--text-dark) !important;
+    font-weight: 500 !important;
+}
+
+.card-body .form-control,
+.card-body .form-select {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+    border-color: #ced4da !important;
+}
+
+.card-body .form-control:focus,
+.card-body .form-select:focus {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+    border-color: #86b7fe !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
+}
+
+/* Account information styling */
+.card-body strong {
+    color: var(--text-dark) !important;
+}
+
+.card-body .row .col-6 {
+    color: var(--text-dark) !important;
+}
+
+/* Main page headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-dark) !important;
+}
+
+/* Badge styling */
+.badge {
+    color: white !important;
+}
+
+/* Button text styling */
+.btn {
+    color: inherit !important;
+}
+
+.btn-primary {
+    color: white !important;
+}
+
+.btn-warning {
+    color: var(--text-dark) !important;
+}
+
+/* Ensure all text in profile page is visible */
+.profile-page * {
+    color: var(--text-dark) !important;
+}
+
+.profile-page .form-control,
+.profile-page .form-select {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+}
+
+/* Modal content styling */
+.modal-body {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+}
+
+.modal-body h1, .modal-body h2, .modal-body h3, .modal-body h4, .modal-body h5, .modal-body h6 {
+    color: var(--text-dark) !important;
+}
+
+.modal-body p, .modal-body li, .modal-body strong {
+    color: var(--text-dark) !important;
+}
+
+.modal-body .list-unstyled li {
+    color: var(--text-dark) !important;
+}
+
+.modal-body .list-unstyled li strong {
+    color: var(--text-dark) !important;
+}
+
+.modal-body code {
+    background-color: #f8f9fa !important;
+    color: var(--text-dark) !important;
+    padding: 2px 4px !important;
+    border-radius: 3px !important;
+}
+
+.modal-body pre {
+    background-color: #f8f9fa !important;
+    color: var(--text-dark) !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+.modal-body pre code {
+    background-color: transparent !important;
+    color: var(--text-dark) !important;
+    padding: 0 !important;
+}
+
+/* Ensure alert content is visible */
+.modal-body .alert {
+    color: inherit !important;
+}
+
+.modal-body .alert-success {
+    background-color: #d4edda !important;
+    color: #155724 !important;
+    border-color: #c3e6cb !important;
+}
+
+.modal-body .alert-success h6,
+.modal-body .alert-success p {
+    color: #155724 !important;
+}
+
+/* Modal header and overall styling */
+.modal-content {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+}
+
+.modal-header {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+.modal-header .modal-title {
+    color: var(--text-dark) !important;
+}
+
+.modal-footer {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+    border-top: 1px solid #dee2e6 !important;
+}
+
+/* Ensure all modal text elements are visible */
+.modal * {
+    color: var(--text-dark) !important;
+}
+
+.modal .btn {
+    color: inherit !important;
+}
+
+.modal .btn-primary {
+    color: white !important;
+}
+
+.modal .btn-secondary {
+    color: white !important;
+}
+
+/* Override any dark mode styles for modals */
+.modal .bg-dark {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+}
+
+/* NUCLEAR OPTION - Force modal form fields to be visible */
+.modal .form-control,
+.modal .form-select,
+.modal input,
+.modal select,
+.modal textarea {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+    border: 1px solid #ced4da !important;
+}
+
+.modal .form-control:focus,
+.modal .form-select:focus,
+.modal input:focus,
+.modal select:focus,
+.modal textarea:focus {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+    border-color: #86b7fe !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
+}
+
+.modal .form-control::placeholder,
+.modal .form-select::placeholder,
+.modal input::placeholder,
+.modal select::placeholder,
+.modal textarea::placeholder {
+    color: #6c757d !important;
+}
+
+/* Modal dropdown options styling */
+.modal .form-select option,
+.modal select option {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+}
+
+/* Modal labels */
+.modal .form-label,
+.modal label {
+    color: #212529 !important;
+    font-weight: 500 !important;
+}
+
+/* Modal dropdown list styling */
+.modal .dropdown-menu {
+    background-color: #ffffff !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+.modal .dropdown-item {
+    color: #212529 !important;
+    background-color: #ffffff !important;
+}
+
+.modal .dropdown-item:hover,
+.modal .dropdown-item:focus {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+.modal .dropdown-item.active {
+    background-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+/* Home page specific styling */
+.btn-light {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+    border-color: #dee2e6 !important;
+}
+
+.btn-light:hover {
+    background-color: #f8f9fa !important;
+    color: var(--text-dark) !important;
+    border-color: #adb5bd !important;
+}
+
+.btn-outline-light {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+    border-color: #ffffff !important;
+}
+
+/* Feature cards styling */
+.card .card-text {
+    color: var(--text-dark) !important;
+}
+
+.card .card-title {
+    color: var(--text-dark) !important;
+}
+
+.card .card-body {
+    color: var(--text-dark) !important;
+}
+
+.card .card-body * {
+    color: var(--text-dark) !important;
+}
+
+/* Ensure all text in cards is visible */
+.card p, .card li, .card span {
+    color: var(--text-dark) !important;
+}
+
+/* Hero section button fixes */
+.hero-section .btn-light {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+.hero-section .btn-light:hover {
+    background-color: #f8f9fa !important;
+    color: var(--text-dark) !important;
+}
+
+.hero-section .btn-outline-light {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+}
+
+.hero-section .btn-outline-light:hover {
+    background-color: #ffffff !important;
+    color: var(--text-dark) !important;
+}
+  .bg-dark .card,
+  .bg-dark .list-group-item,
+  .bg-dark .alert {
+    background-color: var(--surface-dark) !important;
+    color: var(--text-light) !important;
+    border-color: var(--border-dark) !important;
+  }
+  .bg-dark .form-label,
+  .bg-dark .form-text,
+  .bg-dark .form-check-label {
+    color: var(--text-light) !important;
+  }
+      
+  /* --- ONE palette only: remove earlier :root blocks in the file. Keep this one. --- */
+:root {
+  --primary-color: #0d6efd;
+  --primary-dark: #0056b3;
+  --success-color: #198754;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --info-color: #0dcaf0;
+  --light-bg: #f8f9fa;
+  --dark-bg: #212529;
+  --text-dark: #212529;
+  --text-light: #f1f1f1;
+  --text-light-muted: #c7ccd1;
+  --surface-dark: #2b3035;
+  --border-dark: #3a3f44;
+}
+
+/* Utility: allow forcing dark theme without relying on OS */
+body.theme-dark { color-scheme: dark; background-color: var(--dark-bg); color: var(--text-light); }
+
+/* ------------- Fix: readable typography inside dark wrappers (bg-dark or theme-dark) ------------- */
+:where(.bg-dark, body.theme-dark) :is(h1,h2,h3,h4,h5,h6,p,small,label,legend,th,td,span,.card-title,.card-text,.form-label,.form-text,.navbar .nav-link) {
+  color: var(--text-light) !important;
+}
+:where(.bg-dark, body.theme-dark) .text-muted { color: var(--text-light-muted) !important; }
+
+/* Cards, lists, alerts on dark backgrounds */
+:where(.bg-dark, body.theme-dark) :is(.card,.list-group-item,.modal-content,.dropdown-menu,.alert) {
+  background-color: var(--surface-dark) !important;
+  color: var(--text-light) !important;
+  border-color: var(--border-dark) !important;
+}
+
+/* Tables on dark */
+:where(.bg-dark, body.theme-dark) .table {
+  --bs-table-bg: var(--surface-dark);
+  --bs-table-color: var(--text-light);
+  --bs-table-border-color: var(--border-dark);
+}
+
+/* Form controls & placeholders on dark */
+:where(.bg-dark, body.theme-dark) :is(.form-control,.form-select,input,textarea) {
+  background-color: var(--surface-dark) !important;
+  color: var(--text-light) !important;
+  border-color: var(--border-dark) !important;
+}
+:where(.bg-dark, body.theme-dark) :is(.form-control::placeholder,.form-select::placeholder,input::placeholder,textarea::placeholder) {
+  color: var(--text-light-muted);
+  opacity: 1;
+}
+:where(.bg-dark, body.theme-dark) .form-check-label { color: var(--text-light) !important; }
+
+/* Footer contrast both themes */
+footer, .site-footer { background: var(--light-bg); color: var(--text-dark); }
+:where(.bg-dark, body.theme-dark) :is(footer,.site-footer) { background: var(--dark-bg); color: var(--text-light); }
+.site-footer .text-muted { color: var(--text-dark) !important; }
+:where(.bg-dark, body.theme-dark) .site-footer .text-muted { color: var(--text-light) !important; }
+
+/* Badges: don’t force white text everywhere */
+.badge { color: inherit !important; }
+.badge.bg-primary, .badge.text-bg-primary,
+.badge.bg-success, .badge.text-bg-success,
+.badge.bg-danger,  .badge.text-bg-danger { color: #fff !important; }
+.badge.bg-warning, .badge.text-bg-warning { color: #212529 !important; }
+.badge.bg-info,    .badge.text-bg-info    { color: #0a2a33 !important; }
+
+/* Outline buttons should be visible on dark backgrounds */
+:where(.bg-dark, body.theme-dark) .btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+:where(.bg-dark, body.theme-dark) .btn-outline-primary:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* Make browsers adapt native controls properly */
+html { color-scheme: light dark; }
+
+/* Doctor Portal Table Fixes */
+.table-dark {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+}
+
+.table-dark th {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    border-color: #495057 !important;
+}
+
+.table-dark td {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    border-color: #495057 !important;
+}
+
+/* Override table-dark for thead specifically */
+.table-dark thead th {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    border-color: #495057 !important;
+}
+
+/* Ensure table-dark headers are always visible */
+.table thead.table-dark th {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    border-color: #495057 !important;
+}
+
+/* Ensure table rows have proper contrast */
+.table tbody tr {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+.table tbody tr td {
+    background-color: inherit !important;
+    color: inherit !important;
+}
+
+/* Fix for table-striped */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+/* Ensure table headers are always dark (but not for table-dark class) */
+.table thead th:not(.table-dark th) {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    border-color: #495057 !important;
+}
+
+/* Specific rule for non-table-dark headers */
+.table:not(.table-dark) thead th {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    border-color: #495057 !important;
+}
+
+/* Fix for table-hover */
+.table-hover tbody tr:hover {
+    background-color: #e9ecef !important;
+    color: #212529 !important;
+}
+
+/* Ensure badges are visible in table cells */
+.table td .badge {
+    color: #ffffff !important;
+}
+
+.table td .badge.bg-success {
+    background-color: #198754 !important;
+    color: #ffffff !important;
+}
+
+.table td .badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #212529 !important;
+}
+
+.table td .badge.bg-danger {
+    background-color: #dc3545 !important;
+    color: #ffffff !important;
+}
+
+.table td .badge.bg-info {
+    background-color: #0dcaf0 !important;
+    color: #212529 !important;
+}
+
+/* Ensure buttons in table cells are visible */
+.table td .btn {
+    color: inherit !important;
+}
+
+.table td .btn-primary {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+
+.table td .btn-success {
+    background-color: #198754 !important;
+    border-color: #198754 !important;
+    color: #ffffff !important;
+}
+
+.table td .btn-warning {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #212529 !important;
+}
+
+.table td .btn-danger {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: #ffffff !important;
+}
+
+/* Ensure outline buttons are visible inside tables */
+.table td .btn-outline-primary {
+    color: #0d6efd !important;
+    border-color: #0d6efd !important;
+    background-color: transparent !important;
+}
+.table td .btn-outline-secondary {
+    color: #6c757d !important;
+    border-color: #6c757d !important;
+    background-color: transparent !important;
+}
+.table td .btn-outline-primary:hover {
+    background-color: #0d6efd !important;
+    color: #ffffff !important;
+}
+.table td .btn-outline-secondary:hover {
+    background-color: #6c757d !important;
+    color: #ffffff !important;
+}
+
+/* Fix for table-responsive */
+.table-responsive {
+    background-color: transparent !important;
+}
+
+/* Ensure all text in table cells is visible */
+.table td,
+.table th {
+    vertical-align: middle !important;
+}
+
+/* Specific fix for doctor portal tables */
+.card .table tbody tr td {
+    background-color: #ffffff !important;
+    color: #212529 !important;
+}
+
+.card .table tbody tr:hover td {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+}
+
+/* Card table headers - but preserve table-dark */
+.card .table:not(.table-dark) thead th {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+}
+
+/* Ensure table-dark in cards works properly */
+.card .table-dark thead th {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    border-color: #495057 !important;
+}
+
+/* NUCLEAR OPTION - Force table-dark headers to be visible */
+.table-dark thead tr th {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    border-color: #495057 !important;
+    font-weight: 600 !important;
+}
+
+/* Force visibility for all table-dark headers */
+table.table-dark thead th,
+.table-dark thead th,
+thead.table-dark th {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    border-color: #495057 !important;
+    text-shadow: none !important;
+}
+
+/* Override any conflicting rules */
+.table-dark thead th,
+.table-dark thead tr th,
+table.table-dark thead th {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    border-color: #495057 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Specific fix for doctor patients table */
+.card .table-dark thead th,
+.card .table-dark thead tr th {
+    background-color: #212529 !important;
+    color: #ffffff !important;
+    border-color: #495057 !important;
+    font-weight: 600 !important;
+    text-align: left !important;
+    padding: 0.75rem !important;
+}
